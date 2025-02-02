@@ -1,0 +1,433 @@
+{
+    "version": 1,
+    "author": "Jordan Humberto de Souza",
+    "editor": "wokwi",
+    "parts": [
+        {
+            "type": "board-pi-pico-w",
+            "id": "pico",
+            "top": 0,
+            "left": 0,
+            "attrs": {
+                "builder": "pico-sdk"
+            }
+        },
+        {
+            "type": "wokwi-neopixel",
+            "id": "led0",
+            "top": -200,
+            "left": -200,
+            "attrs": {}
+        },
+        {
+            "type": "wokwi-neopixel",
+            "id": "led1",
+            "top": -200,
+            "left": -240,
+            "attrs": {}
+        },
+        {
+            "type": "wokwi-neopixel",
+            "id": "led2",
+            "top": -200,
+            "left": -280,
+            "attrs": {}
+        },
+        {
+            "type": "wokwi-neopixel",
+            "id": "led3",
+            "top": -200,
+            "left": -320,
+            "attrs": {}
+        },
+        {
+            "type": "wokwi-neopixel",
+            "id": "led4",
+            "top": -200,
+            "left": -360,
+            "attrs": {}
+        },
+        {
+            "type": "wokwi-neopixel",
+            "id": "led5",
+            "top": -160,
+            "left": -200,
+            "attrs": {}
+        },
+        {
+            "type": "wokwi-neopixel",
+            "id": "led6",
+            "top": -160,
+            "left": -240,
+            "attrs": {}
+        },
+        {
+            "type": "wokwi-neopixel",
+            "id": "led7",
+            "top": -160,
+            "left": -280,
+            "attrs": {}
+        },
+        {
+            "type": "wokwi-neopixel",
+            "id": "led8",
+            "top": -160,
+            "left": -320,
+            "attrs": {}
+        },
+        {
+            "type": "wokwi-neopixel",
+            "id": "led9",
+            "top": -160,
+            "left": -360,
+            "attrs": {}
+        },
+        {
+            "type": "wokwi-neopixel",
+            "id": "led10",
+            "top": -120,
+            "left": -200,
+            "attrs": {}
+        },
+        {
+            "type": "wokwi-neopixel",
+            "id": "led11",
+            "top": -120,
+            "left": -240,
+            "attrs": {}
+        },
+        {
+            "type": "wokwi-neopixel",
+            "id": "led12",
+            "top": -120,
+            "left": -280,
+            "attrs": {}
+        },
+        {
+            "type": "wokwi-neopixel",
+            "id": "led13",
+            "top": -120,
+            "left": -320,
+            "attrs": {}
+        },
+        {
+            "type": "wokwi-neopixel",
+            "id": "led14",
+            "top": -120,
+            "left": -360,
+            "attrs": {}
+        },
+        {
+            "type": "wokwi-neopixel",
+            "id": "led15",
+            "top": -80,
+            "left": -200,
+            "attrs": {}
+        },
+        {
+            "type": "wokwi-neopixel",
+            "id": "led16",
+            "top": -80,
+            "left": -240,
+            "attrs": {}
+        },
+        {
+            "type": "wokwi-neopixel",
+            "id": "led17",
+            "top": -80,
+            "left": -280,
+            "attrs": {}
+        },
+        {
+            "type": "wokwi-neopixel",
+            "id": "led18",
+            "top": -80,
+            "left": -320,
+            "attrs": {}
+        },
+        {
+            "type": "wokwi-neopixel",
+            "id": "led19",
+            "top": -80,
+            "left": -360,
+            "attrs": {}
+        },
+        {
+            "type": "wokwi-neopixel",
+            "id": "led20",
+            "top": -40,
+            "left": -200,
+            "attrs": {}
+        },
+        {
+            "type": "wokwi-neopixel",
+            "id": "led21",
+            "top": -40,
+            "left": -240,
+            "attrs": {}
+        },
+        {
+            "type": "wokwi-neopixel",
+            "id": "led22",
+            "top": -40,
+            "left": -280,
+            "attrs": {}
+        },
+        {
+            "type": "wokwi-neopixel",
+            "id": "led23",
+            "top": -40,
+            "left": -320,
+            "attrs": {}
+        },
+        {
+            "type": "wokwi-neopixel",
+            "id": "led24",
+            "top": -40,
+            "left": -360,
+            "attrs": {}
+        },
+        {
+            "type": "wokwi-pushbutton",
+            "id": "btnA",
+            "top": 100,
+            "left": 50,
+            "attrs": {
+                "color": "red",
+                "label": "A"
+            }
+        },
+        {
+            "type": "wokwi-pushbutton",
+            "id": "btnB",
+            "top": 150,
+            "left": 50,
+            "attrs": {
+                "color": "blue",
+                "label": "B"
+            }
+        },
+        {
+            "type": "wokwi-rgb-led",
+            "id": "rgbLed",
+            "top": 100,
+            "left": 200,
+            "attrs": {
+                "common": "cathode"
+            }
+        }
+    ],
+    "connections": [
+        [
+            "pico:GP7",
+            "led0:DIN",
+            "green",
+            []
+        ],
+        [
+            "led0:DOUT",
+            "led1:DIN",
+            "green",
+            []
+        ],
+        [
+            "led1:DOUT",
+            "led2:DIN",
+            "green",
+            []
+        ],
+        [
+            "led2:DOUT",
+            "led3:DIN",
+            "green",
+            []
+        ],
+        [
+            "led3:DOUT",
+            "led4:DIN",
+            "green",
+            []
+        ],
+        [
+            "led4:DOUT",
+            "led5:DIN",
+            "green",
+            []
+        ],
+        [
+            "led5:DOUT",
+            "led6:DIN",
+            "green",
+            []
+        ],
+        [
+            "led6:DOUT",
+            "led7:DIN",
+            "green",
+            []
+        ],
+        [
+            "led7:DOUT",
+            "led8:DIN",
+            "green",
+            []
+        ],
+        [
+            "led8:DOUT",
+            "led9:DIN",
+            "green",
+            []
+        ],
+        [
+            "led9:DOUT",
+            "led10:DIN",
+            "green",
+            []
+        ],
+        [
+            "led10:DOUT",
+            "led11:DIN",
+            "green",
+            []
+        ],
+        [
+            "led11:DOUT",
+            "led12:DIN",
+            "green",
+            []
+        ],
+        [
+            "led12:DOUT",
+            "led13:DIN",
+            "green",
+            []
+        ],
+        [
+            "led13:DOUT",
+            "led14:DIN",
+            "green",
+            []
+        ],
+        [
+            "led14:DOUT",
+            "led15:DIN",
+            "green",
+            []
+        ],
+        [
+            "led15:DOUT",
+            "led16:DIN",
+            "green",
+            []
+        ],
+        [
+            "led16:DOUT",
+            "led17:DIN",
+            "green",
+            []
+        ],
+        [
+            "led17:DOUT",
+            "led18:DIN",
+            "green",
+            []
+        ],
+        [
+            "led18:DOUT",
+            "led19:DIN",
+            "green",
+            []
+        ],
+        [
+            "led19:DOUT",
+            "led20:DIN",
+            "green",
+            []
+        ],
+        [
+            "led20:DOUT",
+            "led21:DIN",
+            "green",
+            []
+        ],
+        [
+            "led21:DOUT",
+            "led22:DIN",
+            "green",
+            []
+        ],
+        [
+            "led22:DOUT",
+            "led23:DIN",
+            "green",
+            []
+        ],
+        [
+            "led23:DOUT",
+            "led24:DIN",
+            "green",
+            []
+        ],
+        [
+            "led0:VDD",
+            "pico:VSYS",
+            "red",
+            []
+        ],
+        [
+            "led0:VSS",
+            "pico:GND.38",
+            "black",
+            []
+        ],
+        [
+            "pico:GP5",
+            "btnA:1",
+            "yellow",
+            []
+        ],
+        [
+            "btnA:2",
+            "pico:GND.3",
+            "black",
+            []
+        ],
+        [
+            "pico:GP6",
+            "btnB:1",
+            "blue",
+            []
+        ],
+        [
+            "btnB:2",
+            "pico:GND.3",
+            "black",
+            []
+        ],
+        [
+            "pico:GP11",
+            "rgbLed:R",
+            "red",
+            []
+        ],
+        [
+            "pico:GP12",
+            "rgbLed:G",
+            "green",
+            []
+        ],
+        [
+            "pico:GP13",
+            "rgbLed:B",
+            "blue",
+            []
+        ],
+        [
+            "rgbLed:COM",
+            "pico:GND.1",
+            "black",
+            []
+        ]
+    ],
+    "dependencies": {}
+}

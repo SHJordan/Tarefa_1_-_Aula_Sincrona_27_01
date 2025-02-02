@@ -46,7 +46,11 @@ pico_enable_stdio_usb(Tarefa_1_-_Aula_Sincrona_27_01 0)
 
 # Add the standard library to the build
 target_link_libraries(Tarefa_1_-_Aula_Sincrona_27_01
-        pico_stdlib)
+        pico_stdlib
+        hardware_pio
+    hardware_dma
+    hardware_clocks
+    hardware_dma)
 
 # Add the standard include files to the build
 target_include_directories(Tarefa_1_-_Aula_Sincrona_27_01 PRIVATE
